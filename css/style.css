@@ -1,0 +1,235 @@
+*{
+    padding:0;
+    margin: 0;
+}
+ul,ol,{
+    padding: 0;
+    margin: 0;
+}
+ul,ol {
+    list-style: none;
+}
+body, html {
+    font-family: microsoft yahei, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #555;
+    width: 100% !important;
+    height: 100% !important;
+}
+.navbar a{
+    color: #fff;
+}
+.item {
+    display: table;
+    width:100%;
+    height:100%;
+    color: #fff;
+
+}
+.item-1 {
+    text-align: center;
+    background: url("../images/bg-1.jpg") no-repeat bottom center;
+}
+.itemM{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .item {
+        height:100%;
+        padding: 0;
+    }
+}
+@media (min-width: 768px) {
+    .item-1 h1 {
+        font-size: 70px;
+        font-weight: 700;
+    }
+}
+@media (min-width: 768px) {
+    .textM {
+        font-size:20px;
+        margin-bottom: 50px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+}
+.btn-circle {
+    width: 70px;
+    height:70px;
+    margin-top: 45px;
+    padding:7px 16px;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    font-size: 40px;
+    color: #f0ad4e;
+    transition: background 1s linear;
+}
+.btn-circle:hover {
+    background: rgba(255,255,255,.4)
+}
+.btn-circle:hover i.animated{
+    animation: scale 1.5s linear infinite;
+    color: #f0ad4e;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+   50% {
+       transform: scale(1.3);
+   }
+    100% {
+        transform: scale(1);
+    }
+}
+/*个人信息页面*/
+#session {
+    display: table;
+    width:100%;
+    height:100%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+#canvas{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -100;
+}
+.item-3 {
+    background: url("../images/timg.jpg")  no-repeat bottom center;
+    background-size: 100% 100%;
+}
+.my {
+    display: table;
+    width:100%;
+    height:100%;
+    position: relative;
+    color: #000;
+}
+.xiu{
+    margin: 8% 0 5% 0 ;
+    text-align: center;
+    color: #007fd5;
+    letter-spacing: 16px;
+    font-size: 40px;
+}
+ .bg-img {
+     width: 541px;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     opacity: .5;
+     -webkit-animation: bg-img .5s ease;
+     animation: bg-img .5s ease;
+ }
+ .sm-img {
+    opacity: 0;
+    width: 309px;
+    position: absolute;
+    right: 1%;
+    bottom: 20%;
+    -webkit-animation: sm-img 1s ease forwards;
+    animation: sm-img 1s ease forwards;
+    -webkit-animation-delay: .5s;
+}
+ .hover-bg {
+     height: 260px;
+     overflow: hidden;
+     position: relative;
+ }
+ /*项目经验*/
+#works {
+    text-align: center;
+}
+ .hover-text {
+     position: absolute;
+     text-align: center;
+     color: #fff;
+
+     width: 100%;
+     height: 100%;
+     padding: 25% 0;
+     opacity: 0;
+     background: rgba(0, 0, 0, .66);
+ }
+ .hover-bg .hover-text>h4 {
+     /*opacity: 0;*/
+     transition: all .3s linear;
+     transform: translateY(100%);
+     opacity: 0;
+ }
+ .hover-bg:hover .hover-text>h4 {
+     transform: translateY(0);
+     opacity:1;
+ }
+ .clearfix {
+     display: block;
+ }
+.portfolio-item{
+    margin-bottom: 30px;
+    transition: transform .5s linear;
+}
+ .portfolio-item:hover {
+     -webkit-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -ms-transform: scale(1.2);
+     transform: scale(1.2);
+ }
+.hover-bg:hover, .hover-text:hover{
+    opacity: 1;
+}
+.hover-bg .hover-text>i.fa {
+    font-size: 20px;
+    padding: 5px;
+    color: #f4d04f;
+    transition: transform .3s linear;
+    transform: translateY(0);
+}
+.hover-bg:hover .hover-text>i.fa {
+    transform: translateY(80%)
+}
+a:hover ,a:focus{
+    text-decoration: none;
+}
+#works {
+    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+}
+.title{
+    position:relative;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+.hei {
+    width: 100px;
+    height: 5px;
+    background: #16BA9D;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -50px;
+}
+#works div ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#works div ul li:after {
+    content: "|";
+    margin-left: 20px;
+}
+#works div p {
+   letter-spacing: 5px;
+}
+#works div ul li {
+    margin-left: 20px;
+}

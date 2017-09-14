@@ -1,8 +1,6 @@
 /*********************设置背景************************************/
 .item-1 {
-    background: url("../images/bg1.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    background-size:cover ;
+    background: url("../images/bg1.jpg") no-repeat bottom center;
 }
 .item-2 {
     background: url("../images/base.jpg") no-repeat center center;
